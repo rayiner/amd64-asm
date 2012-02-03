@@ -1,0 +1,11 @@
+(defsystem "amd64-asm"
+  :depends-on (:iterate)
+  :components ((:file "package")
+               (:file "utilities")
+	       (:file "encoders")
+	       (:file "assembler")
+	       (:file "binaries")
+	       (:file "mach-o-binaries")
+	       (:file "driver")
+	       (:file "testsuite"))
+  :serial t)
